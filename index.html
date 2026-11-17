@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>WeatherPlus+</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <!--Big Logo-->
+            <div class="logo">
+                <h1>Weather <br />Plus+</h1>
+            </div>
+            <!--Location Picker-->
+            <div class="location-area">
+                <h3>Location:</h3>
+                <!--Eventually, we'll use some sort of other API or big list instead of hardcoding 3 values.-->
+                <select
+                    name="location"
+                    id="location-input"
+                    class="location-input"
+                >
+                    <option value="35.1983,-111.6513">Flagstaff, AZ</option>
+                    <option value="33.5387,-112.1860">Glendale, AZ</option>
+                    <option value="34.7392,-112.0099">Cottonwood, AZ</option>
+                </select>
+            </div>
+        </header>
+        
+        <main>
+    <h1>
+        <span id="location-string">Location</span>
+        <span id="icon-emoji">🌞</span>
+    </h1>
+
+    <p id="weather-description">
+        Current weather conditions
+    </p>
+
+    <div class="weather-dashboard">
+
+        <div class="weather-card">
+            <h3>Temperature</h3>
+            <p id="temperature">Loading...</p>
+        </div>
+
+        <div class="weather-card">
+            <h3>Weather Conditions</h3>
+            <p id="conditions">Loading...</p>
+        </div>
+
+        <div class="weather-card">
+            <h3>Humidity</h3>
+            <p id="humidity">Loading...</p>
+        </div>
+
+        <div class="weather-card">
+            <h3>Wind Speed</h3>
+            <p id="wind-speed">Loading...</p>
+        </div>
+
+        <div class="weather-card">
+            <h3>Atmospheric Pressure</h3>
+            <p id="pressure">Loading...</p>
+        </div>
+
+    </div>
+
+    <p id="error-message"></p>
+
+        </main>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
